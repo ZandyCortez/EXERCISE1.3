@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pm1.exercise13.ActivityActualizar">
+
+    <EditText
+        android:id="@+id/txtnotas"
+        android:layout_width="365dp"
+        android:layout_height="138dp"
+        android:background="@drawable/rounded_border_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblid5" />
+
+    <EditText
+        android:id="@+id/txtID"
+        android:layout_width="114dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:editable="false"
+        android:enabled="false"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtape"
+        android:layout_width="295dp"
+        android:layout_height="43dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:maxLength="50"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblid3" />
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="295dp"
+        android:layout_height="43dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:maxLength="50"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblid2" />
+
+    <EditText
+        android:id="@+id/txttele"
+        android:layout_width="296dp"
+        android:layout_height="47dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:inputType="numberDecimal"
+        android:maxLength="3"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblid4" />
+
+    <Button
+        android:id="@+id/btnatrass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Atras"
+        app:backgroundTint="#3D913F"
+        app:icon="@android:drawable/ic_media_rew"
+        app:iconTint="#030304"
+        app:layout_constraintEnd_toStartOf="@+id/lblid"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblid"
+        android:layout_width="63dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="ID:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtID"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblid2"
+        android:layout_width="113dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="80dp"
+        android:text="NOMBRE:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblid3"
+        android:layout_width="103dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:text="APELLIDO:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtname" />
+
+    <TextView
+        android:id="@+id/lblid4"
+        android:layout_width="113dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:text="EDAD:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtape" />
+
+    <TextView
+        android:id="@+id/lblid6"
+        android:layout_width="113dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="CORREO:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttele" />
+
+    <TextView
+        android:id="@+id/lblid5"
+        android:layout_width="113dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="DIRECCION:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtemail" />
+
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="ACTUALIZAR CONTACTO"
+        app:backgroundTint="#0A22F1"
+        app:icon="@android:drawable/ic_popup_sync"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnotas" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="298dp"
+        android:layout_height="46dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblid6" />
+</androidx.constraintlayout.widget.ConstraintLayout>
